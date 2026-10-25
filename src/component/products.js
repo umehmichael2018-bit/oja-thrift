@@ -4,11 +4,12 @@ import arrow from "../images/arrow-up-right.svg";
 import ban from "../images/ban.svg";
 import { productsData } from "./productsData";
 
-function Products(){
+function Products({activePage}){
+  const filtered = productsData.slice(((activePage-1)*12), (activePage*12))
   return(
     <div className="product-grid">
-      {productsData.map((product) => (
-        <div className="card">
+      {filtered.map((product) => (
+        <div className="card" key={product.id}>
           <img src={product.image} alt="top"/>
           <div className="cloth-info">
             <p>{product.name}</p>

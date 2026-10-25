@@ -10,6 +10,20 @@ import pacifictee from "../images/pacific tee.svg";
 import stereotee from "../images/stereo tee.svg";
 import suntee from "../images/sun tee.svg";
 import thundertee from "../images/thunder tee.svg";
+import riderstee from "../images/riderstee.svg";
+import surftee from "../images/surftee.svg";
+import unitee from "../images/unitee.svg";
+import baskettee from "../images/baskettee.svg";
+import midtee from "../images/midtee.svg";
+import sandtee from "../images/sandtee.svg";
+import logotee from "../images/logotee.svg";
+import racingtee from "../images/racingtee.svg";
+import spacetee from "../images/spacetee.svg";
+import hikingtee from "../images/hikingtee.svg";
+import rusttee from "../images/rusttee.svg";
+import soundtee from "../images/soundtee.svg";
+
+
 
 export const productsData = [
   {
@@ -117,6 +131,114 @@ export const productsData = [
     price: "₦8,500",
     size: "Size XL / Vintage. good condition",
     image: electrictee,
+    badge: "ONE OF ONE",
+    isSold: false
+  },
+  {
+    id: 13,
+    name: "Vintage Riders Tee",
+    price: "₦8,500",
+    size: "Size XL / Vintage. good condition",
+    image: riderstee,
+    badge: "ONE OF ONE",
+    isSold: false
+  },
+  {
+    id: 14,
+    name: "Surf Tee",
+    price: "₦8,500",
+    size: "Size XL / Vintage. good condition",
+    image: surftee,
+    badge: "ONE OF ONE",
+    isSold: false
+  },
+  {
+    id: 15,
+    name: "Lagos State Uni Tee",
+    price: "₦8,500",
+    size: "Size XL / Vintage. good condition",
+    image: unitee,
+    badge: "ONE OF ONE",
+    isSold: false
+  },
+  {
+    id: 16,
+    name: "Basketball League Tee",
+    price: "₦8,500",
+    size: "Size XL / Vintage. good condition",
+    image: baskettee,
+    badge: "ONE OF ONE",
+    isSold: false
+  },
+  {
+    id: 17,
+    name: "Midnight Expree Tee",
+    price: "₦8,500",
+    size: "Size XL / Vintage. good condition",
+    image: midtee,
+    badge: "ONE OF ONE",
+    isSold: false
+  },
+  {
+    id: 18,
+    name: "Wildlife Tee",
+    price: "₦8,500",
+    size: "Size XL / Vintage. good condition",
+    image: sandtee,
+    badge: "ONE OF ONE",
+    isSold: false
+  },
+  {
+    id: 19,
+    name: "Lagos Logo White Tee",
+    price: "₦8,500",
+    size: "Size XL / Vintage. good condition",
+    image: logotee,
+    badge: "ONE OF ONE",
+    isSold: false
+  },
+  {
+    id: 20,
+    name: "Brown Racing Tee",
+    price: "₦8,500",
+    size: "Size XL / Vintage. good condition",
+    image: racingtee,
+    badge: "ONE OF ONE",
+    isSold: false
+  },
+  {
+    id: 21,
+    name: "Cosmos Plain Tee",
+    price: "₦8,500",
+    size: "Size XL / Vintage. good condition",
+    image: spacetee,
+    badge: "ONE OF ONE",
+    isSold: false
+  },
+  {
+    id: 22,
+    name: "Nature Hiking Tee",
+    price: "₦8,500",
+    size: "Size XL / Vintage. good condition",
+    image: hikingtee,
+    badge: "ONE OF ONE",
+    isSold: false
+  },
+  {
+    id: 23,
+    name: "Orange Sun Tee",
+    price: "₦8,500",
+    size: "Size XL / Vintage. good condition",
+    image: rusttee,
+    badge: "ONE OF ONE",
+    isSold: false
+  },
+  {
+    id: 24,
+    name: "Lagos Sound System Tee",
+    price: "₦8,500",
+    size: "Size XL / Vintage. good condition",
+    image: soundtee,
     badge: "ONE OF ONE",
     isSold: false
   }

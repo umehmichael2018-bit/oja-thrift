@@ -1,6 +1,7 @@
 .product-grid{
     box-sizing: border-box;
-    padding: 0 1.25rem;
+    padding: 0 1.25rem 1.5rem;
+    border-bottom: 1px solid #D7D8CC;
     gap: 1rem;
     width: 100%;
     margin: 0 auto;
