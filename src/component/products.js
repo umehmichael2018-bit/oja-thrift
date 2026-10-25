@@ -15,7 +15,7 @@ function Products(){
             <p>{product.price}</p>
           </div>
           <p className="stuff">{product.size}</p>
-          <button className={`${product.isSold ? "out-of-stock" : "buy-btn"}`} disabled= {product.isSold}>{product.isSold ? <p><img src={ban}/>"Out Of Stock"</p> : <p><img src={wicon}/>"WhatsApp to buy"<img src={arrow}/></p>}</button>
+          <button className={`${product.isSold ? "out-of-stock" : "buy-btn"}`} disabled= {product.isSold}>{product.isSold ? <div><img src={ban} alt="ban"/>Out Of Stock</div> : <div><img src={message} alt="message"/>WhatsApp to buy<img src={arrow} alt="arrow"/></div>}</button>
           <div className={`${product.badge === "SOLD" ? "sold" : "one-of-one"}`}>
             <p>{product.badge}</p>
           </div>
