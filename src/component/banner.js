@@ -1,8 +1,10 @@
+import { useState } from "react";
 import dot from "../images/dot.svg";
 import drop from "../images/drop.svg";
 import "../styles/banner.css";
 
 function Banner(){
+  const [open, setOpen] = useState(false)
   return(
     <div className="banner-main">
       <div className="site">
@@ -30,9 +32,18 @@ function Banner(){
         </div>
       </div>
       <div className="check">
-        <button className="collections">
-          Browse Collections <img src={drop} alt="drop"/>
-        </button>
+        <div className="dropdown">
+          <button className="collections" onClick={()=>setOpen(!open)}>
+            Browse Collections <img src={drop} alt="drop"/>
+          </button>
+          {open && <div className="categories">
+            <button className="top">Tops and Shirts</button>
+            <button className="bottom">Bottoms and Trousers</button>
+            <button className="outer">Outerwears</button>
+            <button className="dress">Dresses and Skirts</button>
+            <button className="set">Beautiful Sets</button>
+            </div>}
+        </div>
         <p className="stuff">12 finds  ·  All clothing</p>
       </div>
     </div>
