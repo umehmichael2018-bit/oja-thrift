@@ -1,0 +1,68 @@
+@import "@fontsource/inter/800.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/anton";
+
+.oja {
+    font-family: Anton;
+    font-size: 2rem;
+    color: #315641;
+}
+
+.tog {
+    color: #315641;
+    gap: 0.1875rem;
+    display: flex;
+    flex-direction: column;
+}
+.vin{
+    font-weight: 800;
+    font-family: Inter;
+    font-size: 0.75rem;
+}
+
+.loca {
+    font-family: Inter;
+    font-size: 0.5625rem;
+    font-weight: 500;
+}
+
+.right {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.right p{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+.header-main-sect1-left{
+    display: flex;
+    gap: 0.625rem;
+    align-items: center;
+}
+
+.pre{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 0.6875rem;
+    color: #77796E;
+}
+
+.header-main-sect1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-main {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 393px;
+    box-sizing: border-box;
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid #D7D8CC;
+}
