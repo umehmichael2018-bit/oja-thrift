@@ -18,7 +18,7 @@ function App(){
   return(
     <div>
       <Header/>
-      <Banner setCategory={setCategory} category={category}/>
+      <Banner setCategory={setCategory} category={category} setActivePage={setActivePage}/>
       <Products activePage={activePage} scrambleProducts={scrambleProducts} category={category} catProducts={catProducts}/>
       <Page activePage={activePage} setActivePage={setActivePage} catProducts={catProducts}/>
       <Footer/>

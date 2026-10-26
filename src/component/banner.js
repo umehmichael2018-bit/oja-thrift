@@ -3,9 +3,10 @@ import dot from "../images/dot.svg";
 import drop from "../images/drop.svg";
 import "../styles/banner.css";
 
-function Banner({category, setCategory}){
+function Banner({category, setCategory, setActivePage}){
   const [open, setOpen] = useState(false);
   const funct = (cat) => {
+    setActivePage(1);
     setCategory(cat);
     setOpen(!open)
   }
