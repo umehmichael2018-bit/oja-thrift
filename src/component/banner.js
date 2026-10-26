@@ -3,13 +3,22 @@ import dot from "../images/dot.svg";
 import drop from "../images/drop.svg";
 import "../styles/banner.css";
 
-function Banner({category, setCategory, setActivePage}){
+function Banner({category, setCategory, setActivePage, catProducts}){
+  const categoryNames = {
+    all: "All Clothing",
+    tops: "tops and shirts",
+    bottoms: "bottoms and trousers",
+    outerwear: "outerwear",
+    dresses: "dresses and skirts",
+    sets: "beautiful sets"
+};
   const [open, setOpen] = useState(false);
   const funct = (cat) => {
     setActivePage(1);
     setCategory(cat);
-    setOpen(!open)
+    setOpen(!open);
   }
+  const name = categoryNames[category] || "All Clothing";
   return(
     <div className="banner-main">
       <div className="site">
@@ -51,7 +60,7 @@ function Banner({category, setCategory, setActivePage}){
             <button className="set" onClick={()=>funct("sets")}>Beautiful Sets</button>
             </div>}
         </div>
-        <p className="stuff">12 finds  ·  All clothing</p>
+        <p className="stuff">{catProducts.length} finds  ·  {name}</p>
       </div>
     </div>
   );
