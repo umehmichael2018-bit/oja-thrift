@@ -2,13 +2,14 @@ import "../styles/products.css";
 import message from "../images/wicon.svg";
 import arrow from "../images/arrow-up-right.svg";
 import ban from "../images/ban.svg";
-import { productsData } from "./productsData";
 
-function Products({activePage}){
-  const filtered = productsData.slice(((activePage-1)*12), (activePage*12))
+
+function Products({activePage,catProducts}){
+  const filtered = catProducts ? catProducts.slice(((activePage-1)*12), (activePage*12)) : [];
   return(
     <div className="product-grid">
-      {filtered.map((product) => (
+      {catProducts && catProducts.length > 0 ? 
+      (filtered.map((product) => (
         <div className="card" key={product.id}>
           <img src={product.image} alt="top"/>
           <div className="cloth-info">
@@ -21,7 +22,8 @@ function Products({activePage}){
             <p>{product.badge}</p>
           </div>
         </div>
-      ))}
+      ))) : <div className="claus"><p className="noth">Nothing to show here</p></div>}
+    
     </div>
   );
 }

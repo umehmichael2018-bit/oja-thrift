@@ -24,6 +24,7 @@
     margin-bottom: 0.75rem;
     font-family: Anton;
     font-size: 4.5rem;
+    text-transform: uppercase;
     color: #252820;
     gap: 0.75rem;
 }
@@ -59,12 +60,13 @@
 }
 
 .all {
-    line-height: 1;
+    line-height: 1.2;
 }
 
 .cloth {
-    line-height: 1;
+    line-height: 1.2;
 }
+
 
 .browse{
     font-family: Inter;
@@ -106,6 +108,18 @@
 }
 
 .top {
+    display: flex;
+    height: 3rem;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 0.8125rem;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #252820;
+    padding: 0 1.125rem;
+}
+
+.allcloth{
     display: flex;
     height: 3rem;
     font-family: Inter;

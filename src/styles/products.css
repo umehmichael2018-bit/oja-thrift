@@ -113,3 +113,24 @@
     border: none;
     border-radius: 4px;
 }
+
+.claus{
+    grid-column: 1 / -1;
+    max-width: 393px;
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    margin: 0 auto;
+    justify-self: center;
+    text-align: center;
+    align-items: center;
+}
+
+.noth {
+    width: 100%;             /* Forces the paragraph to span the full width of .claus */
+    text-align: center;      /* Centers the actual text characters inside */
+    margin: 0;
+    font-family: Inter;
+    font-size: 0.8rem;
+    color: #686C61;
+}

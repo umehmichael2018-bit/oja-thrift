@@ -1,18 +1,17 @@
-import { productsData } from "./productsData";
 import prev from "../images/arrow-left.svg";
 import next from "../images/arrow-right.svg";
 import "../styles/page.css";
 
-function Page({activePage, setActivePage}){
+function Page({activePage, setActivePage, catProducts}){
 
   const itemsPerPage = 12;
-  const totalPages = Math.ceil(productsData.length / itemsPerPage);
+  const totalPages = Math.ceil(catProducts.length / itemsPerPage);
 
   const startCount = (activePage - 1) * itemsPerPage + 1;
-  const endCount = Math.min(activePage * itemsPerPage, productsData.length);
+  const endCount = Math.min(activePage * itemsPerPage, catProducts.length);
   return(
     <div className="page-container">
-      <p className="sho">Showing {startCount}-{endCount} of {productsData.length} finds</p>
+      <p className="sho">Showing {startCount}-{endCount} of {catProducts.length} finds</p>
       <div className="buttons">
         <button onClick = {() => setActivePage(activePage-1)} disabled= {activePage === 1} className="previous">
           <img src={prev} alt="previoso"/> Previous
@@ -44,7 +43,7 @@ function Page({activePage, setActivePage}){
             </button> : null}
           </div>}
         </div>
-        <button className="next" onClick = {() => setActivePage(activePage+1)} disabled={activePage===totalPages}>
+        <button className="next" onClick = {() => setActivePage(activePage+1)} disabled={activePage===totalPages || totalPages === 0}>
           <img src={next} alt="next"/> Next
         </button>
       </div>
