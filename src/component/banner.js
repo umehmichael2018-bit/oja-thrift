@@ -2,8 +2,10 @@ import { useState } from "react";
 import dot from "../images/dot.svg";
 import drop from "../images/drop.svg";
 import "../styles/banner.css";
+import { useSearchParams } from "react-router-dom";
 
 function Banner({category, setCategory, setActivePage, catProducts}){
+  // const [searchParams, setSearchParams] = useSearchParams()
   const categoryNames = {
     all: "All Clothing",
     tops: "tops and shirts",
