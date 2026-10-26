@@ -1,0 +1,154 @@
+.foja {
+    font-family: Anton;
+    font-size: 2rem;
+    color: #315641;
+}
+
+.locdiv {
+    color: #315641;
+    gap: 0.1875rem;
+    display: flex;
+    flex-direction: column;
+}
+.vint{
+    font-weight: 800;
+    font-family: Inter;
+    font-size: 0.75rem;
+}
+
+.loc {
+    font-family: Inter;
+    font-size: 0.5625rem;
+    font-weight: 500;
+}
+
+.duo{
+    display: flex;
+    gap: 0.625rem;
+    align-items: center;
+}
+
+.footer-main {
+    width: 100%;
+    max-width: 393px;
+    background-color: #EAEADE;
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    box-sizing: border-box;
+}
+
+.footer-yap1{
+    color: #77796E;
+    font-family: Inter;
+    font-size: 0.75rem;
+}
+
+.footer-yap{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.footer-yap2{
+    color: #77796E;
+    font-family: Inter;
+    font-size: 0.75rem;
+}
+
+.footer-head{
+    display: flex;
+    flex-direction: column;
+    gap: 1.0625rem;
+    margin-bottom: 1.25rem;
+}
+
+.ig {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 0.625rem;
+    color: #77796E;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.ojav{
+    font-family: Inter;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: #315641;
+    margin-bottom: 1.25rem;
+}
+
+.wat{
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 0.625rem;
+    color: #77796E;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.was-num{
+    font-family: Inter;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: #315641;
+    margin-bottom: 1.25rem;
+}
+
+.map{
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 0.625rem;
+    color: #77796E;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.was-num{
+    font-family: Inter;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: #315641;
+    margin-bottom: 1.25rem;
+}
+
+.lag{
+    font-family: Inter;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: #315641;
+    margin-bottom: 1.5rem;
+}
+
+.hr{
+    padding-right: 1.25rem;
+}
+
+.we{
+    font-family: Inter;
+    font-size: 0.625rem;
+    color: #77796E;
+}
+
+.se{
+    font-family: Inter;
+    font-size: 0.625rem;
+    color: #77796E;
+}
+
+.wese{
+    display: flex;
+    margin-top: 1.25rem;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: 1.5rem;
+}

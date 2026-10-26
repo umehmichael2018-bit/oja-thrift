@@ -34,12 +34,14 @@ function Banner(){
       <div className="check">
         <div className="dropdown">
           <button className="collections" onClick={()=>setOpen(!open)}>
-            Browse Collections <img src={drop} alt="drop"/>
+            Browse Collections <img style={{transform: open ? "rotate(180deg)" : ""}} src={drop} alt="drop"/>
           </button>
-          {open && <div className="categories">
+          {open &&
+           <div className="categories">
+            <chevronDown></chevronDown>
             <button className="top">Tops and Shirts</button>
             <button className="bottom">Bottoms and Trousers</button>
-            <button className="outer">Outerwears</button>
+            <button className="outer">Outerwear1`</button>
             <button className="dress">Dresses and Skirts</button>
             <button className="set">Beautiful Sets</button>
             </div>}
