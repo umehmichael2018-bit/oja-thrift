@@ -5,15 +5,26 @@ import Page from "./component/page";
 import { productsData } from "./component/productsData";
 import Footer from "./component/footer";
 import { useState } from "react";
+import { useSearchParams } from "react-router-dom";
 
 const randomizArray = (array) => {
     return [...array].sort(() => Math.random() - 0.5);
   }
 
 function App(){
+  const [searchParams, setSearchParams] = useSearchParams()
   const [activePage, setActivePage] = useState(1);
   const [scrambleProducts] = useState(() => randomizArray(productsData));
-  const [category, setCategory] = useState("all");
+  const category = searchParams.get("category") || "all";
+  const setCategory = (newCategory) => {
+    if (newCategory === "all") {
+      searchParams.delete("category");
+      setSearchParams(searchParams);
+    } else {
+      setSearchParams({ category: newCategory});
+    }
+    setActivePage(1);
+  };
   const catProducts = scrambleProducts.filter((product) => category === "all" || product.category === category);
   return(
     <div>

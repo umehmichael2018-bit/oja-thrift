@@ -1,15 +1,15 @@
-import vintagetee from "../images/tops/Vintage tee.svg";
-import cosmictee from "../images/tops/cosmic tee.svg";
-import countrytee from "../images/tops/country tee.svg";
-import lagostee from "../images/tops/lagos tee.svg";
-import electrictee from "../images/tops/electric tee.svg";
-import hoopstee from "../images/tops/hoops tee.svg";
-import sailtee from "../images/tops/sail tee.svg";
-import routetee from "../images/tops/route tee.svg";
-import pacifictee from "../images/tops/pacific tee.svg";
-import stereotee from "../images/tops/stereo tee.svg";
-import suntee from "../images/tops/sun tee.svg";
-import thundertee from "../images/tops/thunder tee.svg";
+import vintagetee from "../images/tops/Vintagetee.svg";
+import cosmictee from "../images/tops/cosmictee.svg";
+import countrytee from "../images/tops/countrytee.svg";
+import lagostee from "../images/tops/lagostee.svg";
+import electrictee from "../images/tops/electrictee.webp";
+import hoopstee from "../images/tops/hoopstee.svg";
+import sailtee from "../images/tops/sailtee.svg";
+import routetee from "../images/tops/routetee.svg";
+import pacifictee from "../images/tops/pacifictee.svg";
+import stereotee from "../images/tops/stereotee.svg";
+import suntee from "../images/tops/suntee.svg";
+import thundertee from "../images/tops/thundertee.svg";
 import riderstee from "../images/tops/riderstee.svg";
 import surftee from "../images/tops/surftee.svg";
 import unitee from "../images/tops/unitee.svg";
@@ -40,12 +40,12 @@ import navysweater from "../images/outerwears/navysweater.webp";
 import greysweater from "../images/outerwears/greysweater.webp";
 import brownsweater from "../images/outerwears/brownsweater.webp";
 import greensweater from "../images/outerwears/greensweater.webp";
-import bluejeans from "../images/bottoms/bluejeans.svg";
-import blackjeans from "../images/bottoms/blackjeans.svg";
-import khakitrousers from "../images/bottoms/khakitrousers.svg";
-import oliveshorts from "../images/bottoms/oliveshorts.svg";
-import tantrousers from "../images/bottoms/tantrousers.svg";
-import blueshorts from "../images/bottoms/blueshorts.svg";
+import bluejeans from "../images/bottoms/bluejeans.webp";
+import blackjeans from "../images/bottoms/blackjeans.webp";
+import khakitrousers from "../images/bottoms/khakitrousers.webp";
+import oliveshorts from "../images/bottoms/oliveshorts.webp";
+import tantrousers from "../images/bottoms/tantrousers.webp";
+import blueshorts from "../images/bottoms/blueshorts.webp";
 
 export const productsData = [
   {
