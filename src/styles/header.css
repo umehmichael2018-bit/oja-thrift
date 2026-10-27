@@ -66,3 +66,10 @@
     padding: 1rem 1.25rem;
     border-bottom: 1px solid #D7D8CC;
 }
+
+.box {
+    width: 100%;
+    position: absolute;
+    background-color: "white";
+    height: 5rem;
+}
