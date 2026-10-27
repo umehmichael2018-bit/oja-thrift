@@ -1,7 +1,10 @@
 import searchicon from "../images/search.svg";
 import "../styles/header.css";
+import { useState } from 'react';
 
 function Header(){
+  const [open, setOpen] = useState(false)
+  const [query, setQuery] = useState ("")
   return(
     <div className="header-main">
       <div className="header-main-sect1">
@@ -14,7 +17,7 @@ function Header(){
             <div className="loca">LAGOS, NIGERIA</div>
           </div>
         </div>
-        <button className="right">
+        <button className="right" onClick={() => setOpen(!open)}>
           <img src={searchicon} alt="search icon"/>
           <p>Search</p>
         </button>
@@ -22,6 +25,7 @@ function Header(){
       <div className="sect2">
         <p className="pre">PRE-LOVED. RE-DISCOVERED. RE-WORN.</p>
       </div>
+      {open ? <input placeholder="Enter here"/> : null}
     </div>
   );
 }
