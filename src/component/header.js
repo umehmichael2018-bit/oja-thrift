@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 function Header(){
   const [open, setOpen] = useState(false)
-  const [query, setQuery] = useState ("")
+  //const [query, setQuery] = useState ("")
   return(
     <div className="header-main">
       <div className="header-main-sect1">
