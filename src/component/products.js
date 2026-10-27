@@ -4,7 +4,7 @@ import arrow from "../images/arrow-up-right.svg";
 import ban from "../images/ban.svg";
 
 
-function Products({activePage,catProducts}){
+function Products({activePage,catProducts, category}){
   const filtered = catProducts ? catProducts.slice(((activePage-1)*12), (activePage*12)) : [];
   return(
     <div className="product-grid">
@@ -22,7 +22,7 @@ function Products({activePage,catProducts}){
             <p>{product.badge}</p>
           </div>
         </div>
-      ))) : <div className="claus"><p className="noth">Nothing to show here</p></div>}
+      ))) : <div className="claus"><p className="noth">No {category} curated yet</p></div>}
     
     </div>
   );
