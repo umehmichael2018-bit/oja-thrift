@@ -59,6 +59,7 @@
 }
 
 .header-main {
+    position: relative;
     width: 100%;
     margin: 0 auto;
     max-width: 393px;
@@ -71,5 +72,5 @@
     width: 100%;
     position: absolute;
     background-color: "white";
-    height: 5rem;
+    height: 3rem;
 }
