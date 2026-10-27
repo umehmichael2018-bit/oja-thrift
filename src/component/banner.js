@@ -51,7 +51,7 @@ function Banner({category, setCategory, setActivePage, catProducts}){
           </button>
           <div className="categories" style={{
             zIndex: 10,
-            background: "white",
+            background: "#F5F2EA",
             position: "absolute",
             opacity: open? 1 : 0,
             transform: open ? "translateY(0)" : "translateY(-10px)",
