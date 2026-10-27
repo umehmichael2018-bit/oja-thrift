@@ -7,6 +7,7 @@ function Header(){
   const [query, setQuery] = useState ("")
   return(
     <div className="header-main">
+      {open ? <input className="box" value = {query} placeholder="Enter here" onChange={(e) => setQuery(e.target.value)}/> : null}
       <div className="header-main-sect1">
         <div className="header-main-sect1-left">
           <div className="header-main-sect1-left-hold">
@@ -25,7 +26,6 @@ function Header(){
       <div className="sect2">
         <p className="pre">PRE-LOVED. RE-DISCOVERED. RE-WORN.</p>
       </div>
-      {open ? <input className="box" value = {query} placeholder="Enter here" onChange={(e) => setQuery(e.target.value)}/> : null}
     </div>
   );
 }
