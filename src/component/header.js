@@ -22,7 +22,7 @@ function Header(){
           <p>Search</p>
         </button>
       </div>
-      {open && <input className="box" autoFocus value = {query} placeholder="e.g XL, vintage tee" onChange={(e) => setQuery(e.target.value)}/>}
+      {open && <input className="box" autoFocus value = {query} placeholder="e.g XL, vintage tee" onChange={(e) => setQuery(e.target.value)} onKeyDown={(e) => {if (e.key === "Enter"){e.target.blur()}}}/>}
       <div className="sect2">
         <p className="pre">PRE-LOVED. RE-DISCOVERED. RE-WORN.</p>
       </div>
