@@ -69,9 +69,8 @@
 }
 
 .box {
-    width: 100%;
+    width: 20.8125rem;
     position: absolute;
     background-color: "white";
     height: 3rem;
-    margin: 0 1.25rem;
 }
