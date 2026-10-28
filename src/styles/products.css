@@ -20,11 +20,23 @@
     font-size: 1rem;
 }
 .card {
+    background: #F5F2EA;
     position: relative;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease;
     display: flex;
     flex-direction: column;
     width: 10.5rem;
     justify-content: space-between;
+}
+
+.card img{
+    border-radius: 12px;
+}
+
+.card:hover{
+    border-radius: 12px;
+    transform: translateY(-4px);
 }
 
 .stuff {
