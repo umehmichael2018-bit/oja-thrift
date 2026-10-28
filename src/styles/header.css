@@ -69,6 +69,7 @@
 }
 
 .box {
+    position: relative;
     width: 19rem;
     background-color: "white";
     height: 3rem;
