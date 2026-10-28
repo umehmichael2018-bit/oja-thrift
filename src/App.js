@@ -16,21 +16,38 @@ function App(){
   const [activePage, setActivePage] = useState(1);
   const [scrambleProducts] = useState(() => randomizArray(productsData));
   const category = searchParams.get("category") || "all";
+  const query = searchParams.get("search")?.toLowerCase() || "";
   const setCategory = (newCategory) => {
+    const currentSearch = searchParams.get("search");
+    const newParams = {};
     if (newCategory === "all") {
       searchParams.delete("category");
+      searchParams.delete("search");
       setSearchParams(searchParams);
     } else {
-      setSearchParams({ category: newCategory});
+      if (currentSearch) newParams.search = currentSearch;
+      newParams.category = newCategory;
+
+      setSearchParams(newParams);
     }
     setActivePage(1);
   };
-  const catProducts = scrambleProducts.filter((product) => category === "all" || product.category === category);
+  const catProducts = scrambleProducts.filter((product) => {
+    const matchesCategory = category === "all" || product.category === category;
+    const matchesName = product.name?.toLowerCase().includes(query);
+    const matchesSize = product.size?.toLowerCase().includes(query);
+    const matchesPrice = String(product.price)?.toLowerCase().includes(query);
+    const matchescat = product.category?.toLowerCase().includes(query);
+
+    const matchesSearch = !query || matchesName || matchesPrice || matchesSize || matchescat;
+
+    return matchesCategory && matchesSearch;
+  })
   return(
     <div>
       <Header/>
       <Banner setCategory={setCategory} category={category} setActivePage={setActivePage} catProducts={catProducts}/>
-      <Products activePage={activePage} scrambleProducts={scrambleProducts} category={category} catProducts={catProducts}/>
+      <Products activePage={activePage} query={query} scrambleProducts={scrambleProducts} category={category} catProducts={catProducts}/>
       <Page activePage={activePage} setActivePage={setActivePage} catProducts={catProducts}/>
       <Footer/>
     </div>
