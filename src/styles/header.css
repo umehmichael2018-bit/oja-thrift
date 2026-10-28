@@ -70,7 +70,9 @@
 
 .box {
     width: 19rem;
-    position: absolute;
     background-color: "white";
     height: 3rem;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 600;
 }

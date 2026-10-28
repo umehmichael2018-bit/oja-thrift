@@ -7,7 +7,6 @@ function Header(){
   const [query, setQuery] = useState ("")
   return(
     <div className="header-main">
-      {open ? <input className="box" autoFocus value = {query} placeholder="Enter here" onChange={(e) => setQuery(e.target.value)}/> : null}
       <div className="header-main-sect1">
         <div className="header-main-sect1-left">
           <div className="header-main-sect1-left-hold">
@@ -23,6 +22,7 @@ function Header(){
           <p>Search</p>
         </button>
       </div>
+      {open && <input className="box" autoFocus value = {query} placeholder="e.g XL, vintage tee" onChange={(e) => setQuery(e.target.value)}/>}
       <div className="sect2">
         <p className="pre">PRE-LOVED. RE-DISCOVERED. RE-WORN.</p>
       </div>
