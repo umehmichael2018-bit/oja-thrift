@@ -1,10 +1,31 @@
 import searchicon from "../images/search.svg";
 import "../styles/header.css";
 import { useState } from 'react';
+import { useSearchParams } from "react-router-dom";
 
 function Header(){
-  const [open, setOpen] = useState(false)
-  const [query, setQuery] = useState ("")
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [open, setOpen] = useState(false);
+  const query = searchParams.get("search") || "";
+  const handleSearchChange = (e) => {
+    const value = e.target.value;
+    const category = searchParams.get("category");
+
+    const newParams = {};
+    if (category) newParams.category = category;
+    if (value) newParams.search = value;
+
+    setSearchParams(newParams);
+  };
+
+  const handleClear = () => {
+    const category = searchParams.get("category");
+    if (category){
+      setSearchParams({ category: category });
+    } else {
+      setSearchParams({});
+    }
+  };
   return(
     <div className="header-main">
       <div className="header-main-sect1">
@@ -24,9 +45,9 @@ function Header(){
       </div>
       {open &&
        <div style={{ position: "relative", display:"flex", alignItems: "center", justifyContent: "center", flex: 1, width: "100%"}}>
-         <input className="box" autoFocus value = {query} placeholder="e.g XL, vintage tee" onChange={(e) => setQuery(e.target.value)} onKeyDown={(e) => {if (e.key === "Enter"){e.target.blur()}}}/>
+         <input className="box" autoFocus value = {query} placeholder="e.g XL, vintage tee" onChange={handleSearchChange} onKeyDown={(e) => {if (e.key === "Enter"){e.target.blur()}}}/>
          {query && (
-        <button onClick={() => setQuery("")} 
+        <button onClick={handleClear} 
         style = {{
           position: "absolute", right:"0.75rem", top: "50%",
           transform: 'translateY(-50%)',
