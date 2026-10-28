@@ -23,7 +23,7 @@ function Header(){
         </button>
       </div>
       {open &&
-       <div style={{ position: "relative", display:"flex", alignItems: "center", justifyContent: "center", flex: 1}}>
+       <div style={{ position: "relative", display:"flex", alignItems: "center", justifyContent: "center", flex: 1, width: "100%"}}>
          <input className="box" autoFocus value = {query} placeholder="e.g XL, vintage tee" onChange={(e) => setQuery(e.target.value)} onKeyDown={(e) => {if (e.key === "Enter"){e.target.blur()}}}/>
          {query && (
         <button onClick={() => setQuery("")} 

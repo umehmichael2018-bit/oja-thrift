@@ -70,7 +70,7 @@
 
 .box {
     position: relative;
-    width: 19rem;
+    width: 100%;
     background-color: "white";
     height: 3rem;
     font-family: Inter;
