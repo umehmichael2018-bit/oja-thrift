@@ -11,7 +11,7 @@ function Products({activePage,catProducts, category, query}){
       {catProducts && catProducts.length > 0 ? 
       (filtered.map((product) => (
         <div className="card" key={product.id}>
-          <img src={product.image} alt="top"/>
+          <img className="image" src={product.image} alt="top"/>
           <div className="cloth-info">
             <p>{product.name}</p>
             <p>{product.price}</p>
