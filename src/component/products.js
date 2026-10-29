@@ -17,7 +17,9 @@ function Products({activePage,catProducts, category, query}){
             <p>{product.price}</p>
           </div>
           <p className="stuff">{product.size}</p>
-          <a href={`https://wa.me/2347018465107?text=${encodeURIComponent(`Hi OJA I want ${product.name} - ${product.price} is it available?`)}`} target="_blank" rel="noreferrer" style={{ color: "inherit", textDecoration: "none"}} className={`${product.isSold ? "out-of-stock" : "buy-btn"}`} disabled= {product.isSold}>{product.isSold ? <div><img src={ban} alt="ban"/>Out Of Stock</div> : <div><img src={message} alt="message"/>WhatsApp to buy<img src={arrow} alt="arrow"/></div>}</a>
+          {product.isSold ? 
+          <button className="out-of-stock"><div><img src={ban} alt="ban"/>Out Of Stock</div></button> : 
+          <a href={`https://wa.me/2347018465107?text=${encodeURIComponent(`Hi OJA I want ${product.name} - ${product.price} is it available?`)}`} target={product.isSold ? undefined : "_blank"} rel={product.isSold ? undefined : "noreferrer"} style={{ color: "inherit", textDecoration: "none"}} className="buy-btn"><div><img src={message} alt="message"/>WhatsApp to buy<img src={arrow} alt="arrow"/></div></a>}
           <div className={`${product.badge === "SOLD" ? "sold" : "one-of-one"}`}>
             <p>{product.badge}</p>
           </div>
