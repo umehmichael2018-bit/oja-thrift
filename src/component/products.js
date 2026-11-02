@@ -14,12 +14,12 @@ function Products({activePage,catProducts, category, query}){
           <img className="image" src={product.image} alt="top"/>
           <div className="cloth-info">
             <p>{product.name}</p>
-            <p>{product.price}</p>
+            <p>₦{Number(product.price).toLocaleString()}</p>
           </div>
-          <p className="stuff">{product.size}</p>
+          <p className="stuff">Size {product.size} / {product.description}</p>
           {product.isSold ? 
           <button className="out-of-stock"><div><img src={ban} alt="ban"/>Out Of Stock</div></button> : 
-          <a href={`https://wa.me/2347018465107?text=${encodeURIComponent(`Hi OJA I want ${product.name} - ${product.price} is it available?`)}`} target={product.isSold ? undefined : "_blank"} rel={product.isSold ? undefined : "noreferrer"} style={{ color: "inherit", textDecoration: "none"}} className="buy-btn"><div><img src={message} alt="message"/>WhatsApp to buy<img src={arrow} alt="arrow"/></div></a>}
+          <a href={`https://wa.me/2347018465107?text=${encodeURIComponent(`Hi OJA I want the ${product.name} - ₦${Number(product.price).toLocaleString()}, Size - ${product.size}, My location is: `)}`} target={product.isSold ? undefined : "_blank"} rel={product.isSold ? undefined : "noreferrer"} style={{ color: "inherit", textDecoration: "none"}} className="buy-btn"><div className="corus"><div className="imago"><img src={message} alt="message"/>WhatsApp to buy</div><img src={arrow} alt="arrow"/></div></a>}
           <div className={`${product.badge === "SOLD" ? "sold" : "one-of-one"}`}>
             <p>{product.badge}</p>
           </div>

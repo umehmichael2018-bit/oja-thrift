@@ -51,8 +51,9 @@ export const productsData = [
   {
     id: 1,
     name: "Desert Run '92 Tee",
-    price: "₦6,000",
-    size: "Size L / Vintage, good condition",
+    price: "6000",
+    size: "L",
+    description: "Vintage, good condition",
     category: "tops",
     image: vintagetee,
     badge: "ONE OF ONE",
@@ -61,8 +62,9 @@ export const productsData = [
    {
     id: 2,
     name: "Pacific Surf Club",
-    price: "₦5,500",
-    size: "Size XL / Vintage, good condition",
+    price: "5500",
+    size: "XL",
+    description: "Vintage, good condition",
     image: pacifictee,
     badge: "ONE OF ONE",
     isSold: false,
@@ -71,8 +73,9 @@ export const productsData = [
   {
     id: 3,
     name: "Cosmic Trip Tee",
-    price: "₦7,000",
-    size: "Size L / Vintage, good condition",
+    price: "7000",
+    size: "L",
+    description: "Vintage, good condition",
     image: cosmictee,
     badge: "ONE OF ONE",
     category: "tops",
@@ -81,8 +84,9 @@ export const productsData = [
   {
     id: 4,
     name: "Thunder Speedway Tee",
-    price: "₦6,500",
-    size: "Size XL / Vintage, good condition",
+    price: "6500",
+    size: "XL",
+    description: "Vintage, good condition",
     image: thundertee,
     badge: "SOLD",
     category: "tops",
@@ -91,8 +95,9 @@ export const productsData = [
   {
     id: 5,
     name: "Midnight Jazz Festival Tee",
-    price: "₦8,000",
-    size: "Size XL / Vintage, good condition",
+    price: "8000",
+    size: "XL",
+    description: "Vintage, good condition",
     image: lagostee,
     badge: "ONE OF ONE",
     category: "tops",
@@ -101,8 +106,9 @@ export const productsData = [
   {
     id: 6,
     name: "Wild Country Wolf Tee",
-    price: "₦6,500",
-    size: "Size L / Vintage, good condition",
+    price: "6500",
+    size: "L",
+    description: "Vintage, good condition",
     image: countrytee,
     category: "tops",
     badge: "ONE OF ONE",
@@ -111,8 +117,9 @@ export const productsData = [
   {
     id: 7,
     name: "Route 66 Road Trip Tee",
-    price: "₦7,500",
-    size: "Size XL / Vintage, good condition",
+    price: "7500",
+    size: "XL",
+    description: "Vintage, good condition",
     image: routetee,
     category: "tops",
     badge: "ONE OF ONE",
@@ -121,8 +128,9 @@ export const productsData = [
   {
     id: 8,
     name: "All Star Hoops '96 Tees",
-    price: "₦5,000",
-    size: "Size M / Vintage, good condition",
+    price: "5000",
+    size: "M",
+    description: "Vintage, good condition",
     image: hoopstee,
     category: "tops",
     badge: "ONE OF ONE",
@@ -131,8 +139,9 @@ export const productsData = [
   {
     id: 9,
     name: "Sun Valley Souvenir Tee",
-    price: "₦6,000",
-    size: "Size L / Vintage, good condition",
+    price: "6000",
+    size: "L",
+    description: "Vintage, good condition",
     image: suntee,
     category: "tops",
     badge: "ONE OF ONE",
@@ -141,8 +150,9 @@ export const productsData = [
   {
     id: 10,
     name: "Stereo Sound System Tee",
-    price: "₦7,000",
-    size: "Size XL / Vintage, good condition",
+    price: "7000",
+    size: "XL",
+    description: "Vintage, good condition",
     image: stereotee,
     category: "tops",
     badge: "ONE OF ONE",
@@ -151,8 +161,9 @@ export const productsData = [
   {
     id: 11,
     name: "Harbour Sailing Club Tee",
-    price: "₦5,500",
-    size: "Size L / Vintage, good condition",
+    price: "5500",
+    size: "L",
+    description: "Vintage, good condition",
     image: sailtee,
     category: "tops",
     badge: "ONE OF ONE",
@@ -161,8 +172,9 @@ export const productsData = [
   {
     id: 12,
     name: "Electric Nights Tour Tee",
-    price: "₦8,500",
-    size: "Size XL / Vintage. good condition",
+    price: "8500",
+    size: "XL",
+    description: "Vintage, good condition",
     image: electrictee,
     category: "tops",
     badge: "ONE OF ONE",
@@ -171,9 +183,10 @@ export const productsData = [
   {
     id: 13,
     name: "Vintage Riders Tee",
-    price: "₦8,500",
+    price: "8500",
     category: "tops",
-    size: "Size XL / Vintage. good condition",
+    size: "XL",
+    description: "Vintage, good condition",
     image: riderstee,
     badge: "ONE OF ONE",
     isSold: false
@@ -181,8 +194,9 @@ export const productsData = [
   {
     id: 14,
     name: "Surf Tee",
-    price: "₦8,500",
-    size: "Size XL / Vintage. good condition",
+    price: "8500",
+    size: "XL",
+    description: "Vintage, good condition",
     image: surftee,
     badge: "ONE OF ONE",
     category: "tops",
@@ -191,8 +205,9 @@ export const productsData = [
   {
     id: 15,
     name: "Lagos State Uni Tee",
-    price: "₦8,500",
-    size: "Size XL / Vintage. good condition",
+    price: "8500",
+    size: "XL",
+    description: "Vintage, good condition",
     image: unitee,
     category: "tops",
     badge: "ONE OF ONE",
@@ -201,9 +216,10 @@ export const productsData = [
   {
     id: 16,
     name: "Basketball League Tee",
-    price: "₦8,500",
+    price: "8500",
     category: "tops",
-    size: "Size XL / Vintage. good condition",
+    size: "XL",
+    description: "Vintage, good condition",
     image: baskettee,
     badge: "ONE OF ONE",
     isSold: false
@@ -211,9 +227,10 @@ export const productsData = [
   {
     id: 17,
     name: "Midnight Expree Tee",
-    price: "₦8,500",
+    price: "8500",
     category: "tops",
-    size: "Size XL / Vintage. good condition",
+    size: "XL",
+    description: "Vintage, good condition",
     image: midtee,
     badge: "ONE OF ONE",
     isSold: false
@@ -221,9 +238,10 @@ export const productsData = [
   {
     id: 18,
     name: "Wildlife Tee",
-    price: "₦8,500",
+    price: "8500",
     category: "tops",
-    size: "Size XL / Vintage. good condition",
+    size: "XL",
+    description: "Vintage, good condition",
     image: sandtee,
     badge: "ONE OF ONE",
     isSold: false
@@ -231,9 +249,10 @@ export const productsData = [
   {
     id: 19,
     name: "Lagos Logo White Tee",
-    price: "₦8,500",
+    price: "8500",
     category: "tops",
-    size: "Size XL / Vintage. good condition",
+    size: "XL",
+    description: "Vintage, good condition",
     image: logotee,
     badge: "ONE OF ONE",
     isSold: false
@@ -241,9 +260,10 @@ export const productsData = [
   {
     id: 20,
     name: "Brown Racing Tee",
-    price: "₦8,500",
+    price: "8500",
     category: "tops",
-    size: "Size XL / Vintage. good condition",
+    size: "XL",
+    description: "Vintage, good condition",
     image: racingtee,
     badge: "ONE OF ONE",
     isSold: false
@@ -251,9 +271,10 @@ export const productsData = [
   {
     id: 21,
     name: "Cosmos Plain Tee",
-    price: "₦8,500",
+    price: "8500",
     category: "tops",
-    size: "Size XL / Vintage. good condition",
+    size: "XL",
+    description: "Vintage, good condition",
     image: spacetee,
     badge: "ONE OF ONE",
     isSold: false
@@ -261,9 +282,10 @@ export const productsData = [
   {
     id: 22,
     name: "Nature Hiking Tee",
-    price: "₦8,500",
+    price: "8500",
     category: "tops",
-    size: "Size XL / Vintage. good condition",
+    size: "XL",
+    description: "Vintage, good condition",
     image: hikingtee,
     badge: "ONE OF ONE",
     isSold: false
@@ -271,9 +293,10 @@ export const productsData = [
   {
     id: 23,
     name: "Orange Sun Tee",
-    price: "₦8,500",
+    price: "8500",
     category: "tops",
-    size: "Size XL / Vintage. good condition",
+    size: "XL",
+    description: "Vintage, good condition",
     image: rusttee,
     badge: "ONE OF ONE",
     isSold: false
@@ -281,9 +304,10 @@ export const productsData = [
   {
     id: 24,
     name: "Lagos Sound System Tee",
-    price: "₦8,500",
+    price: "8500",
     category: "tops",
-    size: "Size XL / Vintage. good condition",
+    size: "XL",
+    description: "Vintage, good condition",
     image: soundtee,
     badge: "ONE OF ONE",
     isSold: false
@@ -291,9 +315,10 @@ export const productsData = [
   {
     id: 25,
     name: "Blue Striped Shirt",
-    price: "₦8,500",
+    price: "8500",
     category: "tops",
-    size: "Size XL / Vintage. good condition",
+    size: "XL",
+    description: "Vintage, good condition",
     image: blueshirt,
     badge: "ONE OF ONE",
     isSold: false
@@ -301,9 +326,10 @@ export const productsData = [
   {
     id: 26,
     name: "Cream Linen Shirt",
-    price: "₦8,500",
+    price: "8500",
     category: "tops",
-    size: "Size XL / Vintage. good condition",
+    size: "XL",
+    description: "Vintage, good condition",
     image: creamshirt,
     badge: "ONE OF ONE",
     isSold: false
@@ -311,9 +337,10 @@ export const productsData = [
   {
     id: 27,
     name: "Brown Plaid Shirt",
-    price: "₦8,500",
+    price: "8500",
     category: "tops",
-    size: "Size XL / Vintage. good condition",
+    size: "XL",
+    description: "Vintage, good condition",
     image: brownshirt,
     badge: "SOLD",
     isSold: true
@@ -321,9 +348,10 @@ export const productsData = [
   {
     id: 28,
     name: "Olive Utility Shirt",
-    price: "₦8,500",
+    price: "8500",
     category: "tops",
-    size: "Size XL / Vintage. good condition",
+    size: "XL",
+    description: "Vintage, good condition",
     image: oliveshirt,
     badge: "ONE OF ONE",
     isSold: false
@@ -331,9 +359,10 @@ export const productsData = [
   {
     id: 29,
     name: "Indigo Denim Shirt",
-    price: "₦8,500",
+    price: "8500",
     category: "tops",
-    size: "Size XL / Vintage. good condition",
+    size: "XL",
+    description: "Vintage, good condition",
     image: indigoshirt,
     badge: "ONE OF ONE",
     isSold: false
@@ -341,9 +370,10 @@ export const productsData = [
   {
     id: 30,
     name: "Tropical Camp Shirt",
-    price: "₦8,500",
+    price: "8500",
     category: "tops",
-    size: "Size XL / Vintage. good condition",
+    size: "XL",
+    description: "Vintage, good condition",
     image: tropicalshirt,
     badge: "ONE OF ONE",
     isSold: false
@@ -351,9 +381,10 @@ export const productsData = [
   {
     id: 31,
     name: "Blue Denim Jacket",
-    price: "₦8,500",
+    price: "8500",
     category: "outerwear",
-    size: "Size XL / Vintage. good condition",
+    size: "XL",
+    description: "Vintage, good condition",
     image: bluejacket,
     badge: "ONE OF ONE",
     isSold: false
@@ -361,9 +392,10 @@ export const productsData = [
   {
     id: 32,
     name: "Brown Chore Jacket",
-    price: "₦8,500",
+    price: "8500",
     category: "outerwear",
-    size: "Size XL / Vintage. good condition",
+    size: "XL",
+    description: "Vintage, good condition",
     image: brownjacket,
     badge: "SOLD",
     isSold: true
@@ -371,9 +403,10 @@ export const productsData = [
   {
     id: 33,
     name: "Green Track Jacket",
-    price: "₦8,500",
+    price: "8500",
     category: "outerwear",
-    size: "Size XL / Vintage. good condition",
+    size: "XL",
+    description: "Vintage, good condition",
     image: greenjacket,
     badge: "ONE OF ONE",
     isSold: false
@@ -381,9 +414,10 @@ export const productsData = [
   {
     id: 34,
     name: "Navy Windbreaker",
-    price: "₦8,500",
+    price: "8500",
     category: "outerwear",
-    size: "Size XL / Vintage. good condition",
+    size: "XL",
+    description: "Vintage, good condition",
     image: navyjacket,
     badge: "ONE OF ONE",
     isSold: false
@@ -391,9 +425,10 @@ export const productsData = [
   {
     id: 35,
     name: "Tan Corduroy Jacket",
-    price: "₦8,500",
+    price: "8500",
     category: "outerwear",
-    size: "Size XL / Vintage. good condition",
+    size: "XL",
+    description: "Vintage, good condition",
     image: tanjacket,
     badge: "ONE OF ONE",
     isSold: false
@@ -401,9 +436,10 @@ export const productsData = [
   {
     id: 36,
     name: "Black Bomber Jacket",
-    price: "₦8,500",
+    price: "8500",
     category: "outerwear",
-    size: "Size XL / Vintage. good condition",
+    size: "XL",
+    description: "Vintage, good condition",
     image: blackjacket,
     badge: "ONE OF ONE",
     isSold: false
@@ -411,9 +447,10 @@ export const productsData = [
   {
     id: 37,
     name: "Cream Cable Knit",
-    price: "₦8,500",
+    price: "8500",
     category: "outerwear",
-    size: "Size XL / Vintage. good condition",
+    size: "XL",
+    description: "Vintage, good condition",
     image: creamsweater,
     badge: "ONE OF ONE",
     isSold: false
@@ -421,9 +458,10 @@ export const productsData = [
   {
     id: 38,
     name: "Argyle Sweater Vest",
-    price: "₦8,500",
+    price: "8500",
     category: "outerwear",
-    size: "Size XL / Vintage. good condition",
+    size: "XL",
+    description: "Vintage, good condition",
     image: checkersweater,
     badge: "ONE OF ONE",
     isSold: false
@@ -431,9 +469,10 @@ export const productsData = [
   {
     id: 39,
     name: "Navy Striped Sweater",
-    price: "₦8,500",
+    price: "8500",
     category: "outerwear",
-    size: "Size XL / Vintage. good condition",
+    size: "XL",
+    description: "Vintage, good condition",
     image: navysweater,
     badge: "ONE OF ONE",
     isSold: false
@@ -441,9 +480,10 @@ export const productsData = [
   {
     id: 40,
     name: "Grey Sweatshirt",
-    price: "₦8,500",
+    price: "8500",
     category: "outerwear",
-    size: "Size XL / Vintage. good condition",
+    size: "XL",
+    description: "Vintage, good condition",
     image: greysweater,
     badge: "ONE OF ONE",
     isSold: false
@@ -451,9 +491,10 @@ export const productsData = [
   {
     id: 41,
     name: "Brown Cardigan",
-    price: "₦8,500",
+    price: "8500",
     category: "outerwear",
-    size: "Size XL / Vintage. good condition",
+    size: "XL",
+    description: "Vintage, good condition",
     image: brownsweater,
     badge: "ONE OF ONE",
     isSold: false
@@ -461,9 +502,10 @@ export const productsData = [
   {
     id: 42,
     name: "Green Rugby Shirt",
-    price: "₦8,500",
+    price: "8500",
     category: "outerwear",
-    size: "Size XL / Vintage. good condition",
+    size: "XL",
+    description: "Vintage, good condition",
     image: greensweater,
     badge: "SOLD",
     isSold: true
@@ -471,9 +513,10 @@ export const productsData = [
   {
     id: 43,
     name: "Blue Straight Jeans",
-    price: "₦8,500",
+    price: "8500",
     category: "bottoms",
-    size: "Size XL / Vintage. good condition",
+    size: "XL",
+    description: "Vintage, good condition",
     image: bluejeans,
     badge: "ONE OF ONE",
     isSold: false
@@ -481,9 +524,10 @@ export const productsData = [
   {
     id: 44,
     name: "Black denim Jeans",
-    price: "₦8,500",
+    price: "8500",
     category: "bottoms",
-    size: "Size XL / Vintage. good condition",
+    size: "XL",
+    description: "Vintage, good condition",
     image: blackjeans,
     badge: "ONE OF ONE",
     isSold: false
@@ -491,9 +535,10 @@ export const productsData = [
   {
     id: 45,
     name: "Khaki Cargo Trousers",
-    price: "₦8,500",
+    price: "8500",
     category: "bottoms",
-    size: "Size XL / Vintage. good condition",
+    size: "XL",
+    description: "Vintage, good condition",
     image: khakitrousers,
     badge: "ONE OF ONE",
     isSold: false
@@ -501,9 +546,10 @@ export const productsData = [
   {
     id: 46,
     name: "Olive Cargo Shorts",
-    price: "₦8,500",
+    price: "8500",
     category: "bottoms",
-    size: "Size XL / Vintage. good condition",
+    size: "XL",
+    description: "Vintage, good condition",
     image: oliveshorts,
     badge: "ONE OF ONE",
     isSold: false
@@ -511,9 +557,10 @@ export const productsData = [
   {
     id: 47,
     name: "Tan Pleated Trousers",
-    price: "₦8,500",
+    price: "8500",
     category: "bottoms",
-    size: "Size XL / Vintage. good condition",
+    size: "XL",
+    description: "Vintage, good condition",
     image: tantrousers,
     badge: "ONE OF ONE",
     isSold: false
@@ -521,9 +568,10 @@ export const productsData = [
   {
     id: 48,
     name: "Blue Denim Shorts",
-    price: "₦8,500",
+    price: "8500",
     category: "bottoms",
-    size: "Size XL / Vintage. good condition",
+    size: "XL",
+    description: "Vintage, good condition",
     image: blueshorts,
     badge: "SOLD",
     isSold: true
