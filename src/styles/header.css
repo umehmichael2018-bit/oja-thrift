@@ -55,10 +55,12 @@
 
 .header-main-sect1 {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 .header-main {
+    display: flex;
+    justify-content: space-between;
     position: relative;
     width: 100%;
     margin: 0 auto;
@@ -68,14 +70,37 @@
     border-bottom: 1px solid #D7D8CC;
 }
 
+.search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 250px; /* Fixed container width */
+} 
+
 .box {
     position: relative;
     width: 100%;
     background-color: "white";
-    height: 3rem;
+    height: 2rem;
     font-family: Inter;
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 0.8rem;
+    font-weight: 400;
     background-color: #F5F2EA;
     border: 1px solid black;
+}
+
+@media screen and (min-width: 1024px) {
+    .header-main{
+        width: 100%;
+        max-width: 1200px;
+        justify-content: space-between;
+    }
+
+    .header-main-sect1 {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        gap: 22rem;
+    }
 }

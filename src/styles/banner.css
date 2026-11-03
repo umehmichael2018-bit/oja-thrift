@@ -49,6 +49,7 @@
     font-family: Inter;
     font-weight: 500;
     font-size: 0.6875rem;
+    text-transform: uppercase;
     color: #77796E;
 }
 
@@ -188,4 +189,8 @@
     font-size: 0.75rem;
     font-weight: 400;
     color: #77796E;
+}
+
+@media screen and (min-width: 1024px) {
+
 }

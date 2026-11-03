@@ -22,7 +22,7 @@ function Banner({category, setCategory, setActivePage, catProducts}){
   return(
     <div className="banner-main">
       <div className="site">
-        <p className="pl">THE STORE  /  COLLECTIONS  /  ALL CLOTHING</p>
+        <p className="pl">THE STORE  /  COLLECTIONS  /  {category === "all" ? "ALL CLOTHING" : category}</p>
         <div className="info">
           <img src={dot} alt="dot"/>
           <p className="hand">HANDPICKED IN LAGOS</p>

@@ -38,15 +38,18 @@ function Header(){
             <div className="loca">LAGOS, NIGERIA</div>
           </div>
         </div>
+        <div className="sect2">
+          <p className="pre">PRE-LOVED. RE-DISCOVERED. RE-WORN.</p>
+        </div>
+      </div>
+      {!open ? (
         <button className="right" onClick={() => setOpen(!open)}>
           <img src={searchicon} alt="search icon"/>
           <p>Search</p>
         </button>
-      </div>
-      {open &&
-       <div style={{ position: "relative", display:"flex", alignItems: "center", justifyContent: "center", flex: 1, width: "100%"}}>
+      ) :
+       <div className="search-wrapper">
          <input className="box" autoFocus value = {query} placeholder="e.g XL, vintage tee" onChange={handleSearchChange} onKeyDown={(e) => {if (e.key === "Enter"){e.target.blur()}}}/>
-         {query && (
         <button onClick={handleClear} 
         style = {{
           position: "absolute", right:"0.75rem", top: "50%",
@@ -58,16 +61,12 @@ function Header(){
           display: "flex", alignItems: 'center', justifyContent: "center",
 
         }}>
-          <svg width="10" height="10" viewBox="0 0 10 10">
+          <svg width="10" height="10" viewBox="0 0 10 10" onClick={() => setOpen(!open)}>
             <path d="M1 1 L9 9 M9 1 L1 9" stroke="white" strokeWidth="1.5"/>
           </svg>
-        </button>)}
+        </button>
       
        </div>}
-      
-      <div className="sect2">
-        <p className="pre">PRE-LOVED. RE-DISCOVERED. RE-WORN.</p>
-      </div>
     </div>
   );
 }
