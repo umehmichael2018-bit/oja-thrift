@@ -191,6 +191,28 @@
     color: #77796E;
 }
 
+@media screen and (min-width: 768px) {
+    .banner-main{
+        padding: 1.5rem 1.25rem;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .site {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .banner-info {
+        padding-top: 1.25rem;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
 @media screen and (min-width: 1024px) {
     .banner-main{
         padding: 1.5rem 1.25rem;

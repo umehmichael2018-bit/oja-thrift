@@ -90,6 +90,18 @@
     border: 1px solid black;
 }
 
+@media screen and (min-width: 768px) {
+    .header-main{
+        width: 100%;
+        max-width: 1200px;
+        justify-content: space-between;
+    }
+
+    .header-main-sect1 {
+        width: 100%;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     .header-main{
         width: 100%;

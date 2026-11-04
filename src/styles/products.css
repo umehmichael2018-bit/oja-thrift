@@ -89,18 +89,20 @@
 }
 
 .corus {
+    width: 100%;
     font-family: Inter;
     font-size: 0.75rem;
     color: #315641;
     font-weight: 600;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 0.25rem;
+    justify-content: space-between;
 }
 
 .buy-btn{
     background-color: #E8EDDF;
+    padding: 0 0.3rem;
+    box-sizing: border-box;
     width: 10.5rem;
     height: 2.75rem;
     border: 1px solid #315641;
@@ -152,6 +154,92 @@
     font-size: 0.8rem;
     color: #686C61;
 }
+
+.imago{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+@media screen and (min-width: 768px){
+    .product-grid{
+        box-sizing: border-box;
+        padding: 0 1.25rem 1.5rem;
+        border-bottom: 1px solid #D7D8CC;
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+    }
+
+    .image{
+        width: 223.2px;
+        height: 291.6px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+        border-radius: 12px;
+    }
+
+    .card {
+        background: #F5F2EA;
+        position: relative;
+        transition: all 0.2s ease;
+        display: flex;
+        flex-direction: column;
+        width: 223.2px;
+        justify-content: space-between;
+    }
+
+    .cloth-info{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.5rem;
+        font-family: Inter;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    .buy-btn{
+        background-color: #E8EDDF;
+        width: 223.2px;
+        height: 2.05rem;
+        border: 1px solid #315641;
+        padding: 0 1rem;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+
+    .out-of-stock{
+    background-color: #E6E5DD;
+    width: 223.2px;
+    height: 2.05rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 4px;
+    }
+
+    .corus{
+        width: 100%;
+        font-family: Inter;
+        font-size: 0.75rem;
+        color: #315641;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .imago{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
+
 
 @media screen and (min-width: 1024px){
     .product-grid{
@@ -232,4 +320,3 @@
         gap: 0.5rem;
     }
 }
-
