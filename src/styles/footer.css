@@ -129,7 +129,7 @@
     margin-bottom: 1.5rem;
 }
 
-.hr{
+hr{
     padding-right: 1.25rem;
 }
 
@@ -151,4 +151,23 @@
     flex-direction: column;
     gap: 0.25rem;
     margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .footer-main {
+        width: 100%;
+        max-width: 1200px;
+        background-color: #EAEADE;
+        margin: 0 auto;
+        padding-top: 2rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        box-sizing: border-box;
+    }
+
+    .their-div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }

@@ -22,26 +22,28 @@ function Banner({category, setCategory, setActivePage, catProducts}){
   return(
     <div className="banner-main">
       <div className="site">
-        <p className="pl">THE STORE  /  COLLECTIONS  /  {category === "all" ? "ALL CLOTHING" : category}</p>
+        <p className="pl">THE STORE   /   COLLECTIONS   /  {category === "all" ? "ALL CLOTHING" : category}</p>
         <div className="info">
           <img src={dot} alt="dot"/>
           <p className="hand">HANDPICKED IN LAGOS</p>
         </div>
       </div>
-      <div className="productyap">
-        <div className="product">
-          <p className="all">{category === "all" ? "ALL CLOTHING" : category}</p>
+      <div className="banner-info">
+        <div className="productyap">
+          <div className="product">
+            <p className="all">{category === "all" ? "ALL CLOTHING" : category}</p>
+          </div>
+          <p className="browse">Browsing The Main Catalogue</p>
         </div>
-        <p className="browse">Browsing The Main Catalogue</p>
-      </div>
-      <div className="yap">
-        <div className="yap1">
-          <p>Pre-loved, hand-selected streetwear.</p>
-          <p>Quality garments built to last.</p>
-        </div>
-        <div className="yap2">
-          <p>Explore every unique piece live in store.</p>
-          <p>Find your next favorite fit.</p>
+        <div className="yap">
+          <div className="yap1">
+            <p>Pre-loved, hand-selected streetwear.</p>
+            <p>Quality garments built to last.</p>
+          </div>
+          <div className="yap2">
+            <p>Explore every unique piece live in store.</p>
+            <p>Find your next favorite fit.</p>
+          </div>
         </div>
       </div>
       <div className="check">
@@ -66,7 +68,7 @@ function Banner({category, setCategory, setActivePage, catProducts}){
             <button className="set" onClick={()=>funct("sets")}>Beautiful Sets</button>
           </div>
         </div>
-        <p className="stuff">{catProducts.length} finds  ·  {name}</p>
+        <p className="stuff">{catProducts.length === 1 ? `${catProducts.length} find · ${name}` : `${catProducts.length} finds · ${name}`}</p>
       </div>
     </div>
   );

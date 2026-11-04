@@ -145,8 +145,8 @@
 }
 
 .noth {
-    width: 100%;             /* Forces the paragraph to span the full width of .claus */
-    text-align: center;      /* Centers the actual text characters inside */
+    width: 100%;             
+    text-align: center;      
     margin: 0;
     font-family: Inter;
     font-size: 0.8rem;
